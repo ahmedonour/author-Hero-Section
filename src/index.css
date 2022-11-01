@@ -1,0 +1,91 @@
+:root {
+	--ff-Bebas: 'Bebas Neue', cursive;
+	--ff-Syne:  'Syne', sans-serif;
+
+	/* Colors */
+	--clr-lightgoldenrodyellow:	#FAFAD2;
+ 	--clr-palegoldenrod:#EEE8AA;
+ 	--clrkhaki:#F0E68C;
+ 	--clr-goldenrod:#DAA520	;
+ 	--clr-gold: #FFD700;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	background: url(./assets/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+nav{
+	width: 100vw;
+	height: 100px;
+/*	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-inline: 1rem;
+	align-items: center;
+	color: var(--clr-goldenrod);
+	font-family: var(--ff-Bebas);
+	
+}
+.navlogo p{
+	font-size: 3rem;
+	letter-spacing: 10px;
+	font-family: var(--ff-Syne);
+	font-weight: 700;
+}
+.navbtn ul{
+	list-style: none;
+	display: flex;
+	width: 20vw;
+	justify-content: space-around;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.hero{
+	width: 50%;
+	height: 70vh;
+	color: var(--clr-lightgoldenrodyellow);
+	padding: 3rem;
+	font-family: var(--ff-Syne);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.hero h1{
+	font-size: 3rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+}
+.hero p{
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+.hero button{
+	width: 25%;
+	height: 10%;
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(218, 165, 32, .2);
+	font-family: var(--ff-Bebas) ;
+	letter-spacing: 5px;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	color: white;
+	transition: all 800ms linear;
+	font-size: 1.2rem;
+}
+.hero button:hover{
+	background-color: rgba(218, 165, 32);
+	color: black;
+	cursor: pointer;
+}
